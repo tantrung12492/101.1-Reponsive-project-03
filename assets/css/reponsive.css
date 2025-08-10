@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 /* Máy tính bảng & Mobile */
@@ -40,6 +43,44 @@
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
+  }
+  /* Code cái thanh menu lòi ra khi click vào */
+  .menu-drawer {
+    position: fixed;
+    background-color: rgb(117, 152, 235);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    translate: -100%;
+    transition: 0.3s;
+    padding: 60px;
+  }
+  /* Kiểm tra checkbox của cái label bọc cái thanh menu 3 gạch ngang */
+  .menu-checkbox:checked ~ .menu-drawer {
+    translate: 0;
+  }
+  /* Code phần menu top */
+  .close__menu {
+    width: 36px;
+    color: #fff;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar__link:hover {
+    background-color: #00ffff37;
   }
 }
 /* Máy tính bảng */
