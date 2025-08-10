@@ -1,0 +1,58 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Máy tính bảng & Mobile */
+@media (max-width: 991.98px) {
+  /* Ấn thanh navbar */
+  .navbar {
+    display: none;
+  }
+  /* Chuyển logo ra giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* Căn lại menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+  }
+  /* Code cho overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0; /*Cách đều các cạnh, cũng 4 đối số*/
+    z-index: 1;
+    /* Bình thường thì ẩn lớp phủ này đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* Kiểm tra menu checkbox có đc check hay k? */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* Máy tính bảng */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+}
+
+/* Tạm ẩn chút */
+.hero,
+.footer,
+main {
+  display: none;
+}
