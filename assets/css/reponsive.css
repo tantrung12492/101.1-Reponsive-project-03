@@ -114,6 +114,32 @@
     width: 90%;
     text-align: start;
   }
+  /* Phần worklist */
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  /* Khối about */
+  .about-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .about__media {
+    width: 100%;
+  }
+  .about__img--big {
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px auto;
+  }
+  .about-content {
+    width: 90%;
+    text-align: center;
+  }
+  /* Ẩn bớt cái ảnh nhỏ */
+  .about__img--small {
+    display: none;
+  }
 }
 /* Máy tính bảng */
 @media (min-width: 768px) and (max-width: 991.98px) {
