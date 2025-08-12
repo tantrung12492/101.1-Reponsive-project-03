@@ -140,6 +140,22 @@
   .about__img--small {
     display: none;
   }
+  /* Khối team list */
+  .team__list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+  /* Khối instal */
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 /* Máy tính bảng */
 @media (min-width: 768px) and (max-width: 991.98px) {
